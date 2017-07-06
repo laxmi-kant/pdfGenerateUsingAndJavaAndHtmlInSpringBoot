@@ -3,8 +3,10 @@ package com.base.model;
 import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Entity(name = "Account")
+@Entity
+@Table(name = "Account")
 public  class Account {
 
     @Id

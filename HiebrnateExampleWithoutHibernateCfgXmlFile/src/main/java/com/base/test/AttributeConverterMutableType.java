@@ -12,11 +12,12 @@ public static void main(String[] args){
 	Session session=HibernateUtil2.getSession();
 	Transaction tx = session.beginTransaction();
 	Account account=new Account();
-	account.setId(3L);
-	account.setBalance(new Money(200));
-	account.setOwner("Ashish ");
+	account.setId(5L);
+	account.setBalance(new Money(300));
+	account.setOwner("Ashishss ");
 	try{
 		session.save(account);
+		
 //		Account accounts = session.find( Account.class, 1L );
 //		account.getBalance().setCents( 150 * 100L );
 //		session.persist( accounts );
